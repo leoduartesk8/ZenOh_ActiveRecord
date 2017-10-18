@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyVersion>1.6.0.3</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+    <Version>1.6.3</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>F:\SerraFood\SerraFood\Trunk\API\Core\Packages\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.2" />
+    <PackageReference Include="Npgsql" Version="3.2.5" />
+  </ItemGroup>
+
+</Project>
