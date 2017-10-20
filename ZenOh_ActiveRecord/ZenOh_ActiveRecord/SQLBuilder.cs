@@ -106,5 +106,17 @@ namespace ZenOh_ActiveRecord
 
             return this;
         }
+
+        public SQLBuilder Like(string Field, string value)
+        {
+            if (Condition == string.Empty)
+               Condition = "( Upper(" + Field + ") Like '" + value.ToUpper() + "')";
+            else
+              Condition = Condition + " and ( Upper(" + Field + ") Like '" + value.ToUpper() + "')";
+
+            return this;
+
+        }
+
     }
 }
